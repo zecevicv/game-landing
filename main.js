@@ -94,8 +94,15 @@ window.addEventListener('load', (event) => {
     }
   });
 
-  /*===============   Viewport Fix   ===============*/
+  /* #Viewport Fix
+  ======================================================= */
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 
+AOS.init({
+  startEvent: 'load',
+  once: true,
+  duration: 800,
+  offset: 300
 });

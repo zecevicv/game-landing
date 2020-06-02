@@ -9,7 +9,9 @@
   <title>SOS Battle Royale — Survive at all costs</title>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 
@@ -19,7 +21,7 @@
 
 <body>
   <!-- Page Wrapper -->
-  <div class="page-wrapper">
+  <div class="page-wrapper" data-aos="fade-in">
     <!-- Header -->
     <header class="header">
       <div class="container">
@@ -139,9 +141,9 @@
     <section class="hero">
       <!-- Text -->
       <div class="container">
-        <h1 class="h-primary">SURVIVE AT ALL COSTS</h1>
-        <h2 class="h-secondary">Experience new social battle royale game</h2>
-        <button class="btn btn-primary">Buy now on Steam | $14.99</button>
+        <h1 class="h-primary" data-aos="fade-up" data-aos-delay="500">SURVIVE AT ALL COSTS</h1>
+        <h2 class="h-secondary" data-aos="fade-up" data-aos-delay="650">Experience new social battle royale game</h2>
+        <button class="btn btn-primary" data-aos="fade-up" data-aos-delay="800">Buy now on Steam | $14.99</button>
       </div>
 
       <!-- Scroll Down -->
@@ -152,7 +154,7 @@
     </section>
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="img-anchor">
       <div class="container">
         <!-- Text -->
         <div class="text">
@@ -166,7 +168,7 @@
               and death</span>.</p>
         </div>
         <!-- Image Slider -->
-        <div class="img">
+        <div class="img" data-aos="fade-right" data-aos-anchor="#img-anchor">
           <div>
             <!-- Swiper -->
             <div class="swiper-container">
@@ -197,7 +199,7 @@
     </section>
 
     <!-- Features -->
-    <section class="features">
+    <section class="features" id="collapse-anchor">
       <div class="container">
         <!-- Text -->
         <div class="text">
@@ -206,7 +208,7 @@
           <!-- Collapse -->
           <div class="collapse">
             <!-- Item -->
-            <div class="item active">
+            <div class="item active" data-aos="fade-up" data-aos-anchor="#collapse-anchor">
               <!-- Indicator -->
               <div class="indicator">
                 <span></span>
@@ -217,7 +219,7 @@
               </div>
             </div>
             <!-- Item -->
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#collapse-anchor">
               <!-- Indicator -->
               <div class="indicator">
                 <span></span>
@@ -228,7 +230,7 @@
               </div>
             </div>
             <!-- Item -->
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#collapse-anchor">
               <!-- Indicator -->
               <div class="indicator">
                 <span></span>
@@ -283,7 +285,7 @@
     </section>
 
     <!-- Quotes -->
-    <section class="press-quotes">
+    <section class="press-quotes" id="quotes-anchor">
       <div class="container">
         <!-- Text -->
         <div class="text">
@@ -297,7 +299,7 @@
         <!-- Quotes -->
         <div class="quotes">
           <!-- Quote -->
-          <div class="quote">
+          <div class="quote" data-aos="fade-left" data-aos-anchor="#quotes-anchor">
             <!-- Header -->
             <div class="quote-header">
               <!-- Img -->
@@ -326,7 +328,7 @@
             </div>
           </div>
           <!-- Quote -->
-          <div class="quote">
+          <div class="quote" data-aos="fade-left" data-aos-delay="150" data-aos-anchor="#quotes-anchor">
             <!-- Header -->
             <div class="quote-header">
               <!-- Img -->
@@ -355,7 +357,7 @@
             </div>
           </div>
           <!-- Quote -->
-          <div class="quote">
+          <div class="quote" data-aos="fade-left" data-aos-delay="300" data-aos-anchor="#quotes-anchor">
             <!-- Header -->
             <div class="quote-header">
               <!-- Img -->
@@ -513,6 +515,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
     integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="main.js"></script>
 </body>
 
