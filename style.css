@@ -500,12 +500,25 @@ body.no-scroll .header {
 /* #Hero
 ================================================== */
 .hero {
-  min-height: 100vh;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  
   background-image: url('./img/hero-bg.jpg');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   background-size: cover;
   position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(at 40% 0, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.8032) 73.22%,#08090A 99.74%);
 }
 
 /* Text */
@@ -551,7 +564,7 @@ body.no-scroll .header {
 /* #About
 ================================================== */
 .about {
-  background-image: url('./img/about-bg.jpg');
+  /* background-image: url('./img/about-bg.jpg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -701,10 +714,11 @@ body.no-scroll .header {
 /* #Features
 ================================================== */
 .features {
-  background-image: url('./img/features-bg.jpg');
+  background-image: url('./img/features-bg.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  background-color: #090b0c;
   padding: 200px 0;
 }
 
@@ -847,7 +861,7 @@ body.no-scroll .header {
 .sys-req {
   background-image: url('./img/sys-req-bg.jpg');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   position: relative;
   padding: 150px 0;
@@ -925,13 +939,10 @@ body.no-scroll .header {
 /* #Press Quotes
 ================================================== */
 .press-quotes {
-  background-image: url('./img/quotes-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
   position: relative;
   display: flex;
   padding: 150px 0;
+  background-color: #090b0c;
 }
 
 .press-quotes .container {
@@ -1254,7 +1265,7 @@ body.no-scroll .header {
 /* #Footer
 ================================================== */
 .footer {
-  padding: 20px 0 45px 0;
+  padding: 45px 0;
   color: var(--white);
 }
 
