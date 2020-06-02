@@ -378,7 +378,7 @@ body.no-scroll .header {
   padding: 0;
   cursor: pointer;
   transition-property: opacity, filter;
-  transition-duration: 0.15s;
+  transition-duration: 0.5s;
   transition-timing-function: linear;
   font: inherit;
   color: inherit;
@@ -416,9 +416,9 @@ body.no-scroll .header {
   height: 2px;
   background-color: var(--white);
   position: absolute;
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .hamburger-inner::before,
@@ -561,6 +561,12 @@ body.no-scroll .header {
   width: 20px;
 }
 
+@media (max-width: 575.98px) {
+  .scroll-down {
+    bottom: 20px;
+  }
+}
+
 /* #About
 ================================================== */
 .about {
@@ -632,6 +638,10 @@ body.no-scroll .header {
   flex: 0 0 52%;
   min-width: 0;
   cursor: pointer;
+}
+
+.about .img img {
+  width: 100%;
 }
 
 .about .img .swiper-container {
@@ -714,11 +724,10 @@ body.no-scroll .header {
 /* #Features
 ================================================== */
 .features {
-  background-image: url('./img/features-bg.png');
+  background-image: url('./img/features-bg.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  background-color: #090b0c;
   padding: 200px 0;
 }
 
