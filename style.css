@@ -438,11 +438,11 @@ body.no-scroll .header {
 }
 
 .hamburger--arrow.is-active .hamburger-inner::before {
-  transform: translate3d(7px, 2px, 0) rotate(45deg) scale(0.5, 1);
+  transform: translate3d(8px, 3px, 0) rotate(45deg) scale(0.5, 1);
 }
 
 .hamburger--arrow.is-active .hamburger-inner::after {
-  transform: translate3d(7px, -2px, 0) rotate(-45deg) scale(0.5, 1);
+  transform: translate3d(8px, -3px, 0) rotate(-45deg) scale(0.5, 1);
   width: 24px;
   margin-left: 0;
 }
@@ -841,6 +841,10 @@ body.no-scroll .header {
 
   .collapse h4 {
     font-size: 21px;
+  }
+
+  .collapse .indicator {
+    height: 27px;
   }
 }
 
