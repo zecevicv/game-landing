@@ -372,7 +372,7 @@ body.no-scroll .header {
   }
 }
 
-/* #Header Popup
+/* #Hamburger
 ================================================== */
 .hamburger {
   padding: 0;
@@ -468,6 +468,8 @@ body.no-scroll .header {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.1em;
+
+  display: none;
 }
 
 .header-popup.show {
